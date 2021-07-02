@@ -103,10 +103,6 @@ textarea {
 
    }
 
-   header nav {
-    font-family: 'Poppins', sans-serif;
-   }
-
 
    ul,
    ol { 
@@ -138,18 +134,18 @@ textarea {
 
    p {
      font-size: .875em;
-     line-height: 1.55em;
-     font-weight: 100;
+     line-height: 1.285;
   
-
    }
  
 
    img {
+     width: 100%;
 
    }
 
    figure {
+     margin: 0;
 
 
    }
@@ -157,12 +153,6 @@ textarea {
    address {
      font-style: normal;
 
-   }
-
-
-   .content-wrapper {
-     width: 90%;
-     margin: 50px 0;
    }
 
 
@@ -179,9 +169,6 @@ textarea {
   }
    /*-----Base Header - Footer Styles -----*/
 
-  
-
-
    header,
    footer {
      display: flex;
@@ -195,16 +182,22 @@ textarea {
     padding: 15px 0;
   }
 
-   header .content-wrapper {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-flow: row wrap;
-       width: 88%;
-       margin: 0;
-    
-   }
+ 
+  header .content-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
    .header-divider {
      width: 100%;
      height: 1px;
@@ -213,15 +206,15 @@ textarea {
    }
 
    header nav {
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    text-transform: uppercase;
-    width: 60%;
-    color: #202322;
-    font-size: 1.25em;
-}
+  }
 
 header nav ul {
   width: 100%;
@@ -241,7 +234,6 @@ footer {
 
 footer p {
   margin: 0;
-  color: #e2e3ed;
 }
 
 
@@ -279,11 +271,17 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+background: url('../img/woman-bush.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 
 }
+
+
 
 .hero-area h1 {
   font-size: 2.25em;
@@ -332,9 +330,11 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/camp.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 
 }
@@ -342,6 +342,10 @@ input[type=button] {
 .features h2 {
   margin-bottom: 60px;
 
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 .features article {
@@ -373,8 +377,6 @@ input[type=button] {
     flex-flow: row wrap;
   
   }
-
-
 
   .reviews h2 {
     margin-bottom: 40px;
@@ -549,6 +551,16 @@ input[type=button] {
        margin: 100px 0;
      }
 
+     h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
+
      /* Header */
 
      header {
@@ -563,6 +575,10 @@ input[type=button] {
 
 
      }
+
+     header figure {
+      width: 30%;
+    }
 
      header nav {
        width: 20%;
@@ -579,6 +595,16 @@ input[type=button] {
      }
 
      /* Hero Area */
+
+     .hero-area {
+      min-height: 600px;
+    }
+  
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+  }
 
      /* Aside */
      aside .content-wrapper {
@@ -597,12 +623,25 @@ input[type=button] {
 
      /*Features*/ 
 
+.features {
+  background: url('../img/camp.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+     .features h2 {
+      margin-bottom: 20px;
+    }
+ 
      .features article {
        display: flex;
        justify-content: center;
        align-items: center;
        flex-flow: column wrap;
-       flex-basis: 500px;
+       flex-basis: 50%;
 
      }
 
@@ -618,26 +657,46 @@ input[type=button] {
 
      }
 
-     .reviews article div {
-       width: 50%;
-     }
+     .reviews h2 {
+      width: 85%;
+    }
+  
+    
+    .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
 
      /*Footer*/
 
     footer .content-wrapper {
       width: 65%;
-      margin: 100% 0;
+      margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      flex-direction: row;
     }
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+  
+    footer p {
+        line-height: 1.285;
     }
 
     footer .copyright {
@@ -646,7 +705,6 @@ input[type=button] {
    
 
    /*--About--*/
-
 
    .mission-content {
      display: flex;
@@ -661,7 +719,7 @@ input[type=button] {
      width: 45%;
    }
 
-   .contact .content-wrapper h2 {
+   .contact-section .content-wrapper h2 {
      width: 80%;
    }
 
@@ -671,6 +729,10 @@ input[type=button] {
      align-items: flex-start;
    }
 
+   .contact-content h4 {
+    font-size: 1.5em;
+  }
+
    /*--FAQ--*/
 
    .faq .content-wrapper {
@@ -679,65 +741,88 @@ input[type=button] {
    }
 
    .faq-content {
-     flex-basis: 40%;
+     flex-basis: 45%;
 
    }
 
    .faq h2 {
      width: 100%;
    }
+
+   .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
   }
 
    @media only screen and (min-width: 1200px) {
     /*--Desktop styles here --*/
 
-       /* General styles */
-       .content-wrapper {
-        max-width: 960px;
-      
-      }
- 
-      /* Header */
- 
-  
-      /* Hero Area */
-
-      .hero-area h1 {
-        width: 60%;
+    header {
+      padding: 15px 0;
     }
- 
-      /* Aside */
-      aside .content-wrapper {
-        
-        justify-content: space-around;
-     
-      }
- 
-      aside .content-wrapper .form-description,
-      aside .content-wrapper .form {
-        width: 30%;
-      }
- 
- 
-      /*Features*/ 
- 
-      .features h2 {
-        width: 90%;
-      }
-      .features article {
-        flex-basis: 33%;
- 
-      }
- 
+  
+    .content-wrapper {
+      max-width: 960px;
+    }
+  
+    h2 {
+      font-size: 2.25em;
+    }
+  
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+  
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
+    /* Hero */
+    .hero-area h1 {
+      font-size: 3.75em;
+      width: 80%;
+  }
+  
+    /* Aside */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+  
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+  
+    .form-description p {
+      font-size: 1.125em;
+    }
+  
+    /* Features */
+  
+  
+    .features h2 {
+      width: 90%;
+    }
+  
+    .features article {
+      flex-basis: 33%;
+    }
     
- 
-      /* Reviews */
-
-      .reviews article div {
-        width: 42%;
-      }
- 
-    
+    /* Reviews */
+    .reviews article div {
+      width: 42%;
+    }
+  
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+  
+    footer h4 {
+      font-size: 1.875em;
+    }
  
     /*--About--*/
  
@@ -745,7 +830,13 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+      font-size: 3em;
   }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
     
  
     /*--FAQ--*/
@@ -753,7 +844,14 @@ input[type=button] {
     
     .faq h2 {
       width: 100%;
+      font-size: 3em;
     } 
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 
   }
 
